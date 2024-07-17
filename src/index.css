@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+// theme buttons color
+.light {
+  --bgColor: hsl(0, 0%, 93%);
+    --gtColor1: hsl(334.96, 100%, 75.1%);
+    --gtColor2: hsl(243.65, 95.04%, 76.27%);
+}
+.dark {
+  --bgColor: rgb(2, 6, 23);
+}
+.blue {
+  --bgColor: hsl(195, 53%, 79%);
+  --gtColor1: hsl(93.2, 94.5%, 78.63%);
+  --gtColor1: hsl(334.96, 100%, 75.1%);
+  --gtColor2: hsl(59.56, 91.89%, 70.98%);
+}
+.green {
+  --bgColor: hsl(150, 80%, 15%);
+}
+.brown {
+  --bgColor: hsl(39, 70%, 50%);
+}
+.pink {
+  --bgColor: hsl(350, 100%, 88%);
+}
+
+// active theme
+.active {
+  border: 3px solid hsl(0, 0%, 87%);
+}
