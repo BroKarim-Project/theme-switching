@@ -1,35 +1,33 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 
 export const ThemeContext = createContext({
-  themeMode: 'light',
-  setThemeMode: () => {},
+  themeMode: 'ligt',
+  setThemeMode: () => {}
 });
 
 export const ThemeProvider = ({ children }) => {
-  const [themeMode, setThemeMode] = useState('light');
+  const [themeMode, setThemeMode] = useState('ligt');
 
   useEffect(() => {
-    document.querySelector('html').classList.remove('light', 'dark', 'blue', 'green', 'brown', 'pink');
+    document
+      .querySelector('html')
+      .classList.remove('light', 'dark', 'blue', 'green', 'brown', 'pink');
     document.querySelector('html').classList.add(themeMode);
   }, [themeMode]);
 
   const value = {
     themeMode,
-    setThemeMode,
+    setThemeMode
   };
 
   return (
-    <ThemeContext.Provider value={value} className="bg-bgColor">
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
 };
 
 export default function Theme() {
   return useContext(ThemeContext);
 }
-
-
 
 /* ** PENJELASAN **
 

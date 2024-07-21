@@ -7,8 +7,42 @@ export default {
         bgColor: 'var(--bgColor)',
         gtColor1: 'var(--gtColor1)',
         gtColor2: 'var(--gtColor2)',
+        textColor: 'var(--textColor)',
+        textColor2: 'var(--textColor2)'
       },
     },
   },
   plugins: [],
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

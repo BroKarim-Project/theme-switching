@@ -7,32 +7,54 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-// theme buttons color
+.pathScracth {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+  opacity: 10;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .light {
-  --bgColor: hsl(0, 0%, 93%);
-    --gtColor1: hsl(334.96, 100%, 75.1%);
-    --gtColor2: hsl(243.65, 95.04%, 76.27%);
+  --bgColor: hsl(105.6, 100%, 95.1%);
+  --gtColor1: hsl(93.2, 94.5%, 78.63%);
+  --gtColor2: hsl(59.56, 91.89%, 70.98%);
 }
 .dark {
   --bgColor: rgb(2, 6, 23);
+  --gtColor1: hsl(210, 32.39%, 27.84%);
+  --gtColor2: hsl(195, 19.05%, 58.82%);
+  --textColor: hsl(0, 0%, 96.08%);
+  --textColor2: hsl(0, 83.87%, 63.53%);
 }
 .blue {
   --bgColor: hsl(195, 53%, 79%);
   --gtColor1: hsl(93.2, 94.5%, 78.63%);
-  --gtColor1: hsl(334.96, 100%, 75.1%);
   --gtColor2: hsl(59.56, 91.89%, 70.98%);
 }
 .green {
   --bgColor: hsl(150, 80%, 15%);
+  --gtColor1: hsl(181.65, 100%, 35.69%);
+  
+  --gtColor2: hsl(153.81, 100%, 38.63%);
+  --textColor: hsl(138.46, 79.59%, 90.39%);
+  --textColor2:hsl(189.15, 100%, 46.27%);
 }
 .brown {
   --bgColor: hsl(39, 70%, 50%);
+  --gtColor1: hsl(162.9, 100%, 37.84%);
+  --gtColor2: hsl(158.54, 100%, 26.86%);
+ 
 }
 .pink {
   --bgColor: hsl(350, 100%, 88%);
+  --gtColor1:hsl(96.92, 73.58%, 89.61%);
+  --gtColor2: hsl(105.6, 100%, 95.1%);
 }
 
-// active theme
-.active {
-  border: 3px solid hsl(0, 0%, 87%);
-}
+
